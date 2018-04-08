@@ -1,6 +1,13 @@
 @import 'abstracts/vars';
 
-body {
-  background: $teal;
-  color: $black;
-}
+@import 'base/typography';
+
+@import 'components/header';
+@import 'components/footer';
+
+@import 'layout/layout';
+
+@import 'pages/home';
+@import 'pages/about';
+
+@import 'utils/helpers';
