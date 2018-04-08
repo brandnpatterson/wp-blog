@@ -63,7 +63,7 @@ gulp.task('styles', ['stylelint'], () => {
 gulp.task('watch', () => {
     gulp.watch(`${paths.js}**/*.js`, ['scripts']);
     gulp.watch(`${paths.sass}**/*.scss`, ['styles']);
-    gulp.watch('index.html', browserSync.reload);
+    gulp.watch('*.php', browserSync.reload);
 });
 
 gulp.task('default', ['scripts', 'styles', 'watch'], () => {

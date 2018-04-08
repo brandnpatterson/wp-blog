@@ -10,6 +10,15 @@ function custom_scripts_enqueue() {
      * @param {String} $media
      */
     wp_enqueue_style( 'custom_styles', get_template_directory_uri() . '/public/style.css', array(), '1.0.0', 'all' );
+
+    /**
+     * wp_enqueue_script
+     * @param {String} $handle
+     * @param {String} $src
+     * @param {Array} $deps
+     * @param {String} $version
+     * @param {Boolean} $footer
+     */
     wp_enqueue_script( 'custom_bundled_scripts', get_template_directory_uri() . '/public/bundle.js', array(), '1.0.0', true );
 }
 
